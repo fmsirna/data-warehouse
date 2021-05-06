@@ -51,16 +51,16 @@
         </div>
         <!-- Page Features-->
         <div class="text-center mt-5">
-            <table id="table" class="table-hover">
-                <thead>
-                  <tr>
-                    <th data-checkbox="true"></th>
-                    <th data-field="id" data-sortable="true">ID</th>
-                    <th data-field="name" data-sortable="true">Item Name</th>
-                    <th data-field="price">Item Price</th>
-                  </tr>
-                </thead>
-              </table>              
+            <table 
+            id="table" 
+            class="table-hover"
+            data-detail-view="true"
+            data-show-pagination-switch="true"
+            data-pagination="true"
+            data-page-list="[10]"
+            data-show-footer="true"
+            data-id-field="id"
+            ></table>              
         </div>
     </div>
     <div>
@@ -72,6 +72,7 @@
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table-locale-all.min.js"></script>
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.js"></script>
     <!-- Custom scripts for all pages-->
